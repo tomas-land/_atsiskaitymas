@@ -1,0 +1,71 @@
+.bottom{
+    width: 100%;
+    margin: auto;
+
+    h1{
+        color: $font-spalva;
+        margin-top: 155px;
+        margin-bottom: 34px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        @include responsive {
+            margin-top: 50px ;
+        }
+
+    }
+    p{
+        margin: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        color: $font-spalva;
+        width: 40%;
+        margin-bottom: 90px;
+        @include responsive {
+            width: 90%;
+            margin: auto;
+    }    
+}
+// ??????????????????????????????? nest?
+&__container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color:$font-spalva
+     
+    }
+    &__box{
+        width: 24%;
+        margin-bottom: 191px;;
+        @include responsive {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+            &__image{
+                width: 65px;
+  
+            }
+            &__label{
+
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 40px;
+            }
+            &__text{
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 100px;;
+
+            }
+        } 
+        
+    }
+       
+
+
